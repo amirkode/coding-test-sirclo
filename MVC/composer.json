@@ -1,0 +1,31 @@
+{
+    "name": "coding-test/mvc",
+    "description": "BE - Berat",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Amir Mu'tashim Billah",
+            "email": "amirmutashim@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodingTest\\Sirclo\\SimpleMVC\\" : "app"
+        },
+        "files": [
+            "app/Helpers/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodingTest\\Sirclo\\SimpleMVC\\" : "test"
+        }
+    }
+}
+ 
