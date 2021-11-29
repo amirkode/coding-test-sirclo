@@ -6,12 +6,13 @@ use CodingTest\Sirclo\SimpleMVC\Utils\Database;
 // init db
 $conn = Database::getConnection();
 // init all required tables
-$createStmt = 'CREATE TABLE berat (
+$createStmt = 'DROP TABLE IF EXISTS berat;
+CREATE TABLE berat (
 id INT AUTO_INCREMENT PRIMARY KEY,
 date DATE NOT NULL UNIQUE,
 min INT NOT NULL,
 max INT NOT NULL,
-created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)';
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);';
 try {
     $statement = $conn->prepare($createStmt);
     $statement->execute();
@@ -19,7 +20,7 @@ try {
     echo $e->getMessage();
 }
 
-echo 'Table Created.';
+echo 'Table Created.' . PHP_EOL;
 
 // down
 /*

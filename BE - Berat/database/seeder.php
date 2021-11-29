@@ -22,3 +22,5 @@ for($i = 1; $i <= 25; $i ++) {
     $date = '2021-11-' . $day;
     generateRandData($date);
 }
+
+echo 'Data seeded.' . PHP_EOL;

@@ -1,4 +1,4 @@
 ###**Cara Installasi**
 
-1. Bahasa Python3
+1. Install Python3
 2. ``pip install pytest``
