@@ -8,7 +8,7 @@ Project ini saya menggunakan bahasa PHP versi 7.4 karena saya banyak project yan
 4. Clone Project
 5. Jalankan ``composer install``
 6. Jalankan ``composer refresh-data`` untuk migrasi database dan seed data
-7. Masuk ke directory ``/public dan jalankan`` ``php -S localhost:[port]``
+7. Masuk ke directory ``/public`` dan jalankan ``php -S localhost:[port]``
 8. http://localhost:[port] bisa dibuka via browser
 
 
